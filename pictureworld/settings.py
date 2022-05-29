@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'pictures',
-    'bootstrap3',
+    
 ]
 
 MIDDLEWARE = [
@@ -79,10 +79,10 @@ WSGI_APPLICATION = 'pictureworld.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': config('DB_NAME'),
-           'USER': config('DB_USER'),
-           'PASSWORD': config('DB_PASSWORD'),
-           'HOST': config('DB_HOST'),
+        'NAME': ('DB_NAME'),
+           'USER': ('DB_USER'),
+           'PASSWORD': ('DB_PASSWORD'),
+           'HOST': ('DB_HOST'),
            'PORT': '',
     }
 }
@@ -112,7 +112,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'AFRICA/NAIROBI'
+TIME_ZONE = 'Africa/Nairobi'
 
 USE_I18N = True
 
